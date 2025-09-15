@@ -1,0 +1,10 @@
+footer{
+  grid-area: "footer";
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 120px;
+  background: linear-gradient(to left, #fff0da, #fffaf3);
+  box-shadow: 10px 0px 10px 0 #a87425;
+}

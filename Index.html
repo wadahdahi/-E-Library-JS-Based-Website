@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/Styles/Styles.css" />
+    <link rel="stylesheet" href="./src/Styles/Header.css" />
+    <link rel="stylesheet" href="./src/Styles/Footer.css" />
+    <link rel="stylesheet" href="./src/Styles/Main.css" />
+    <link rel="stylesheet" href="./src/Styles/card.css" />
+    <link rel="stylesheet" href="./src/Styles/modal.css" />
+    <link rel="stylesheet" href="./src/Styles/search-bar.css" />
+    <script src="./src/js/animation.js" defer></script>
+    <script src="./src/js/Book.js" defer></script>
+    <script src="./src/js/render.js" defer></script>
+    <script src="./src/js/main.js" defer></script>
+    <script src="./src/js/BookCard.js" defer></script>
+    <script src="./src/js/Library.js" defer></script>
+    <script src="./src/js/locationCode.js" defer></script>
+    <title>E-Library-JS-Based-Website</title>
+
+    <body>
+      <div id="body-background-02"></div>
+      <div id="body-background"></div>
+      <header>
+        <div class="header-first-part">
+          <a class="logo" href="#/">ورَقة</a>
+          <div class="input-wrapper">
+            <button class="btn-search" type="button"></button>
+            <input
+              class="input"
+              type="text"
+              placeholder="ابحث في الموقع (حالياً مربع البحث هذا قيد الصيانة)"
+            />
+          </div>
+          <div id="header-background"></div>
+        </div>
+        <div class="header-second-part">
+          <nav>
+            <div class="nav-foreground" id="nav-f">
+              <ul id="ulNav">
+                <li>
+                  <a href="">
+                    <img
+                      class="home-icon"
+                      src="src/icons/home-icon.svg"
+                      alt="home icon"
+                  /></a>
+                </li>
+                <li><a href="#">كتب</a></li>
+                <li><a href="#">مؤلفون</a></li>
+                <li><a href="#">عروض</a></li>
+                <li><a href="#">اشتراكات</a></li>
+                <li><a href="#">الأكثر مبيعاً</a></li>
+              </ul>
+            </div>
+            <div class="nav-background"></div>
+          </nav>
+          <button id="btn-language" type="button">اللغة</button>
+        </div>
+      </header>
+      <!-- ----------[ MAIN ]------------ -->
+      <main>
+        <div id="controls-place">
+          <img
+            id="img-controls-wrapper-bg"
+            src="./src/images/12-grunge-paint-roller-stroke-banner-11.gif"
+            alt=""
+          />
+          <section id="controls-wrapper">
+            <p id="adv-search">بحث متقدم</p>
+            <div id="search-bar">
+              <div id="controls">
+                <input
+                  type="text"
+                  id="searchInput"
+                  placeholder="ابحث بالعنوان أو المؤلف"
+                />
+                <select id="categoryFilter">
+                  <option value="all">كل الفئات</option>
+                </select>
+                <button id="addBookBtn">إضافة كتاب</button>
+              </div>
+
+              <!-- [ Modal to add books ] -->
+
+              <div id="modal" class="modal">
+                <div class="modal-content">
+                  <span id="closeModalBtn" class="close">&times;</span>
+                  <div id="modal-side-div">
+                    <h2>إضافة كتاب جديد</h2>
+                  </div>
+                  <div id="modal-input-div">
+                    <div id="modal-inputs-wrapper">
+                      <input
+                        type="text"
+                        id="newTitle"
+                        placeholder="عنوان الكتاب"
+                      />
+                      <input type="text" id="newAuthor" placeholder="المؤلف" />
+                      <input type="text" id="newCategory" placeholder="الفئة" />
+                    </div>
+                    <select id="newAvailable">
+                      <option value="true">متاح</option>
+                      <option value="false">غير متاح</option>
+                    </select>
+                    <!--[ Location Code ]----------------------------- -->
+                    <section id="local-code-bar">
+                      <h4>أدخل موقع الكتاب</h4>
+                      <div id="location-selection">
+                        <select id="floor-select"></select>
+                        <select id="section-select"></select>
+                        <select id="shelf-select"></select>
+                      </div>
+                    </section>
+                    <!-- --------------------------------------------- -->
+                    <button id="saveBookBtn">حفظ الكتاب</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div id="books-review-background"></div>
+          <div id="books-review-frame"></div>
+        </div>
+
+        <div id="bookGroup">
+          <ul id="cardsWrapper" class="books"></ul>
+        </div>
+      </main>
+      <footer></footer>
+    </body>
+  </head>
+</html>

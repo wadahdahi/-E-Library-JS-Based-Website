@@ -1,0 +1,77 @@
+#modal {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  flex-direction: row;
+  direction: rtl;
+  margin: auto;
+  /* width: 400px; */
+  /* border-radius: 12px; */
+  flex-direction: row;
+}
+#modal h4 {
+  color: #80551d;
+  font-size: 1rem;
+  margin: 10px;
+  text-indent: 2px;
+}
+#modal h2 {
+  color: #80551d;
+  text-indent: 6px;
+}
+#modal select {
+  background-color: #fff0dc;
+  padding: 2px;
+  border-radius: 0.5rem;
+}
+#modal-side-div {
+  width: 200px;
+}
+/* ------------------- Input ---------------- */
+#modal-input-div {
+  width: 200px;
+}
+#modal-inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.325rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+/* ------------------------------------------ */
+#modal button,
+#modal input {
+  border: 1px solid #b17931;
+  border-radius: 0.5rem;
+  padding: 0.125rem;
+}
+#modal #newAvailable,
+#modal input {
+  text-indent: 4px;
+}
+#modal #newAvailable,
+#modal button {
+  background-color: #fdedd8;
+}
+/* #saveBookBtn,
+#newAvailable {
+  width: 200px;
+} */
+.modal-content {
+  background: #fcf1b6;
+}
+
+#closeModalBtn {
+  transform: scale(1.5);
+  color: #fff0dc;
+  position: absolute;
+  top: 16px;
+  left: 30px;
+  padding: 10px;
+}
+/* ------------------------------------------------------- */
+
+#location-selection {
+  display: flex;
+  flex-direction: row;
+}

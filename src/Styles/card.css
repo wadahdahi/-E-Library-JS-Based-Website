@@ -1,0 +1,35 @@
+ul.books {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 0;
+}
+
+li.book-card {
+  width: 220px;
+  background: #e7d883;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding-bottom: 1rem;
+}
+
+.book-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* .book-info {
+  padding: 0.5rem 1rem;
+}
+
+.book-info h3 {
+  margin: 0.5rem 0;
+}
+
+.book-info p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+} */

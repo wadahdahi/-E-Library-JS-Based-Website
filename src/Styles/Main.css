@@ -1,0 +1,143 @@
+/* -----------------Variables------------------ */
+:root {
+  --books-review-place-width: 56.25rem;
+  --books-review-place-height: 9.375rem;
+}
+
+/* -------------Books Review Place------------- */
+/* ----- Note : هاد  
+ال DIV
+هوي حاوي لكل من
+#books-review
+#books-review-frame
+ */
+main {
+  grid-area: "main";
+  position: relative;
+}
+/* ------------------------------------------------------- */
+#img-controls-wrapper-bg {
+  z-index: 1;
+  width: 200px;
+}
+#controls-place {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: var(--books-review-place-width);
+  height: var(--books-review-place-height);
+  margin: 30px auto;
+  align-items: center;
+  justify-content: center;
+}
+#controls-img-background {
+  z-index: 10;
+  position: absolute;
+  width: 1000px;
+}
+#controls-wrapper {
+  z-index: 4;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  width: var(--books-review-place-width);
+  height: var(--books-review-place-height);
+  margin: auto;
+  justify-content: right;
+
+  align-items: center;
+  background-color: #fcf1b6;
+}
+
+#adv-search {
+  text-align: start;
+}
+
+#books-review-frame {
+  z-index: 1;
+  position: absolute;
+  border-radius: 0.625rem;
+  border: 2px solid #f3f3f3;
+  width: calc(var(--books-review-place-width) * 1.02);
+  height: calc(var(--books-review-place-height) * 1.1);
+  margin: auto;
+}
+
+#books-review-background {
+  display: block;
+  z-index: 3;
+  position: absolute;
+  border-radius: 0.625rem;
+  width: calc(var(--books-review-place-width) * 1.02);
+  height: calc(var(--books-review-place-height) * 1.1);
+  background-color: #aea15e73;
+  margin: auto;
+}
+
+/* -------------------------------------------- */
+#book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem), 1fr);
+  gap: 1.5rem;
+  background-color: rgb(50, 192, 145);
+}
+
+.book-card {
+  border-radius: 0.75rem;
+  background-color: rgb(202, 255, 237);
+}
+
+.book-card:hover {
+  transform: translateY(-0.375rem);
+}
+
+.book-info {
+  padding: 1rem;
+}
+
+.book-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.book-info p {
+  margin: 0.3rem 0;
+  color: rgb(21, 121, 87);
+  font-size: 0.9rem;
+}
+
+#search-bar {
+  align-items: center;
+  margin: 0 auto;
+}
+
+#categoryFilter {
+  width: 200px;
+  text-indent: 4px;
+  padding: 0.4rem 0.3rem;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid ​#cec176;
+  background-color: rgb(223, 255, 236);
+}
+
+/* -------------Carousel----------------------- */
+#bookGroup {
+  display: flex;
+  flex-direction: column;
+  width: 56.25rem;
+  height: 100rem;
+  align-items: center;
+  margin: 7.5rem auto;
+  border-radius: 10px;
+  border: 1px solid #f3f3f3;
+  background-color: #fcf1b6;
+}
+
+/* -------------Card Wrapper----------------------- */
+#cardsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
